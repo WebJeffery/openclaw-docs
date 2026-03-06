@@ -14,10 +14,10 @@ OpenClaw 从 `~/.openclaw/openclaw.json` 读取可选的 **JSON5** 配置。
 - 设置模型、工具、沙箱（Sandbox）或自动化（cron、hooks）
 - 调整会话（Session）、媒体、网络或 UI
 
-参阅[完整参考](/gateway/configuration-reference)了解所有可用字段。
+参阅[完整参考](/tutorials/gateway/configuration-reference)了解所有可用字段。
 
 ::: tip 提示
-**配置新手？**从 `openclaw onboard` 开始交互式设置，或查看[配置示例](/gateway/configuration-examples)指南获取完整的可复制粘贴配置。
+**配置新手？**从 `openclaw onboard` 开始交互式设置，或查看[配置示例](/tutorials/gateway/configuration-examples)指南获取完整的可复制粘贴配置。
 :::
 
 
@@ -79,15 +79,15 @@ OpenClaw 仅接受完全匹配 schema 的配置。未知键、格式错误的类
 
     每个通道（Channel）在 `channels.<provider>` 下有自己的配置部分。参阅专门的通道（Channel）页面了解设置步骤：
 
-    - [WhatsApp](/channels/whatsapp) — `channels.whatsapp`
-    - [Telegram](/channels/telegram) — `channels.telegram`
-    - [Discord](/channels/discord) — `channels.discord`
-    - [Slack](/channels/slack) — `channels.slack`
-    - [Signal](/channels/signal) — `channels.signal`
-    - [iMessage](/channels/imessage) — `channels.imessage`
-    - [Google Chat](/channels/googlechat) — `channels.googlechat`
-    - [Mattermost](/channels/mattermost) — `channels.mattermost`
-    - [MS Teams](/channels/msteams) — `channels.msteams`
+    - [WhatsApp](/tutorials/channels/whatsapp) — `channels.whatsapp`
+    - [Telegram](/tutorials/channels/telegram) — `channels.telegram`
+    - [Discord](/tutorials/channels/discord) — `channels.discord`
+    - [Slack](/tutorials/channels/slack) — `channels.slack`
+    - [Signal](/tutorials/channels/signal) — `channels.signal`
+    - [iMessage](/tutorials/channels/imessage) — `channels.imessage`
+    - [Google Chat](/tutorials/channels/googlechat) — `channels.googlechat`
+    - [Mattermost](/tutorials/channels/mattermost) — `channels.mattermost`
+    - [MS Teams](/tutorials/channels/msteams) — `channels.msteams`
 
     所有通道（Channel）共享相同的 DM 策略模式：
 
@@ -132,8 +132,8 @@ OpenClaw 仅接受完全匹配 schema 的配置。未知键、格式错误的类
 
     - `agents.defaults.models` 定义模型目录，并作为 `/model` 的白名单。
     - 模型引用使用 `provider/model` 格式（例如 `anthropic/claude-opus-4-6`）。
-    - 参阅[模型 CLI](/concepts/models) 了解在聊天中切换模型，以及[模型故障转移](/concepts/model-failover)了解认证轮换和回退行为。
-    - 对于自定义/自托管模型提供商（Provider），参阅参考中的[自定义模型提供商（Provider）](/gateway/configuration-reference#custom-providers-and-base-urls)。
+    - 参阅[模型 CLI](/tutorials/concepts/models) 了解在聊天中切换模型，以及[模型故障转移](/tutorials/concepts/model-failover)了解认证轮换和回退行为。
+    - 对于自定义/自托管模型提供商（Provider），参阅参考中的[自定义模型提供商（Provider）](/tutorials/gateway/configuration-reference#custom-providers-and-base-urls)。
 
   
 
@@ -151,7 +151,7 @@ OpenClaw 仅接受完全匹配 schema 的配置。未知键、格式错误的类
 
     对于群组，使用 `groupPolicy` + `groupAllowFrom` 或通道（Channel）特定的白名单。
 
-    参阅[完整参考](/gateway/configuration-reference#dm-and-group-access)了解每通道（Channel）详情。
+    参阅[完整参考](/tutorials/gateway/configuration-reference#dm-and-group-access)了解每通道（Channel）详情。
 
   
 
@@ -184,7 +184,7 @@ OpenClaw 仅接受完全匹配 schema 的配置。未知键、格式错误的类
 
     - **元数据提及**：原生 @-提及（WhatsApp 点击提及、Telegram @bot 等）
     - **文本模式**：`mentionPatterns` 中的正则模式
-    - 参阅[完整参考](/gateway/configuration-reference#group-chat-mention-gating)了解每通道（Channel）覆盖和自聊模式。
+    - 参阅[完整参考](/tutorials/gateway/configuration-reference#group-chat-mention-gating)了解每通道（Channel）覆盖和自聊模式。
 
   
 
@@ -209,8 +209,8 @@ OpenClaw 仅接受完全匹配 schema 的配置。未知键、格式错误的类
 ```
 
     - `dmScope`：`main`（共享）| `per-peer` | `per-channel-peer` | `per-account-channel-peer`
-    - 参阅[会话（Session）管理](/concepts/session)了解作用域、身份链接和发送策略。
-    - 参阅[完整参考](/gateway/configuration-reference#session)了解所有字段。
+    - 参阅[会话（Session）管理](/tutorials/concepts/session)了解作用域、身份链接和发送策略。
+    - 参阅[完整参考](/tutorials/gateway/configuration-reference#session)了解所有字段。
 
   
 
@@ -236,7 +236,7 @@ OpenClaw 仅接受完全匹配 schema 的配置。未知键、格式错误的类
 
     先构建镜像：`scripts/sandbox-setup.sh`
 
-    参阅[沙箱（Sandbox）](/gateway/sandboxing)了解完整指南，以及[完整参考](/gateway/configuration-reference#sandbox)了解所有选项。
+    参阅[沙箱（Sandbox）](/tutorials/gateway/sandboxing)了解完整指南，以及[完整参考](/tutorials/gateway/configuration-reference#sandbox)了解所有选项。
 
   
 
@@ -260,7 +260,7 @@ OpenClaw 仅接受完全匹配 schema 的配置。未知键、格式错误的类
 
     - `every`：持续时间字符串（`30m`、`2h`）。设置 `0m` 禁用。
     - `target`：`last` | `whatsapp` | `telegram` | `discord` | `none`
-    - 参阅[心跳](/gateway/heartbeat)了解完整指南。
+    - 参阅[心跳](/tutorials/gateway/heartbeat)了解完整指南。
 
   
 
@@ -279,7 +279,7 @@ OpenClaw 仅接受完全匹配 schema 的配置。未知键、格式错误的类
 }
 ```
 
-    参阅 [Cron 作业](/automation/cron-jobs)了解功能概览和 CLI 示例。
+    参阅 [Cron 作业](/tutorials/automation/cron-jobs)了解功能概览和 CLI 示例。
 
   
 
@@ -311,7 +311,7 @@ OpenClaw 仅接受完全匹配 schema 的配置。未知键、格式错误的类
 }
 ```
 
-    参阅[完整参考](/gateway/configuration-reference#hooks)了解所有映射选项和 Gmail 集成。
+    参阅[完整参考](/tutorials/gateway/configuration-reference#hooks)了解所有映射选项和 Gmail 集成。
 
   
 
@@ -337,7 +337,7 @@ OpenClaw 仅接受完全匹配 schema 的配置。未知键、格式错误的类
 }
 ```
 
-    参阅[多智能体（Agent）](/concepts/multi-agent)和[完整参考](/gateway/configuration-reference#multi-agent-routing)了解绑定规则和每智能体（Agent）访问 profile。
+    参阅[多智能体（Agent）](/tutorials/concepts/multi-agent)和[完整参考](/tutorials/gateway/configuration-reference#multi-agent-routing)了解绑定规则和每智能体（Agent）访问 profile。
 
   
 
@@ -529,12 +529,12 @@ OpenClaw 从父进程读取环境变量，另外还有：
 :::
 
 
-参阅[环境](/help/environment)了解完整优先级和来源。
+参阅[环境](/tutorials/help/environment)了解完整优先级和来源。
 
 ## 完整参考
 
-有关完整的逐字段参考，请参阅**[配置参考](/gateway/configuration-reference)**。
+有关完整的逐字段参考，请参阅**[配置参考](/tutorials/gateway/configuration-reference)**。
 
 ---
 
-_相关：[配置示例](/gateway/configuration-examples) · [配置参考](/gateway/configuration-reference) · [Doctor](/gateway/doctor)_
+_相关：[配置示例](/tutorials/gateway/configuration-examples) · [配置参考](/tutorials/gateway/configuration-reference) · [Doctor](/tutorials/gateway/doctor)_

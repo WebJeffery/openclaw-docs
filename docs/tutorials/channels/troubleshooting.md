@@ -40,7 +40,7 @@ openclaw channels status --probe
 | 群组消息被忽略          | 检查配置中的 `requireMention` + 提及模式 | 提及机器人或放宽该群组的提及策略。 |
 | 随机断开/重新登录循环 | `openclaw channels status --probe` + 日志           | 重新登录并验证凭据目录是否正常。   |
 
-完整故障排查：[/channels/whatsapp#troubleshooting-quick](/channels/whatsapp#troubleshooting-quick)
+完整故障排查：[/channels/whatsapp#troubleshooting-quick](/tutorials/channels/whatsapp#troubleshooting-quick)
 
 ---
 
@@ -55,7 +55,7 @@ openclaw channels status --probe
 | 发送失败并出现网络错误 | 检查日志中的 Telegram API 调用失败     | 修复到 `api.telegram.org` 的 DNS/IPv6/代理路由。                           |
 | 升级后白名单阻止你 | `openclaw security audit` 和配置白名单 | 运行 `openclaw doctor --fix` 或将 `@username` 替换为数字发送者 ID。 |
 
-完整故障排查：[/channels/telegram#troubleshooting](/channels/telegram#troubleshooting)
+完整故障排查：[/channels/telegram#troubleshooting](/tutorials/channels/telegram#troubleshooting)
 
 ---
 
@@ -69,7 +69,7 @@ openclaw channels status --probe
 | 群组消息被忽略          | 检查日志中的提及门控丢弃 | 提及机器人或设置公会/频道 `requireMention: false`。 |
 | 私信回复缺失              | `openclaw pairing list discord`     | 批准私信配对或调整 DM 策略。                   |
 
-完整故障排查：[/channels/discord#troubleshooting](/channels/discord#troubleshooting)
+完整故障排查：[/channels/discord#troubleshooting](/tutorials/channels/discord#troubleshooting)
 
 ---
 
@@ -83,7 +83,7 @@ openclaw channels status --probe
 | 私信被阻止                            | `openclaw pairing list slack`             | 批准配对或放宽 DM 策略。               |
 | 频道消息被忽略                | 检查 `groupPolicy` 和频道白名单 | 允许该频道或将策略切换为 `open`。     |
 
-完整故障排查：[/channels/slack#troubleshooting](/channels/slack#troubleshooting)
+完整故障排查：[/channels/slack#troubleshooting](/tutorials/channels/slack#troubleshooting)
 
 ---
 
@@ -99,8 +99,8 @@ openclaw channels status --probe
 
 完整故障排查：
 
-- [/channels/imessage#troubleshooting-macos-privacy-and-security-tcc](/channels/imessage#troubleshooting-macos-privacy-and-security-tcc)
-- [/channels/bluebubbles#troubleshooting](/channels/bluebubbles#troubleshooting)
+- [/channels/imessage#troubleshooting-macos-privacy-and-security-tcc](/tutorials/channels/imessage#troubleshooting-macos-privacy-and-security-tcc)
+- [/channels/bluebubbles#troubleshooting](/tutorials/channels/bluebubbles#troubleshooting)
 
 ---
 
@@ -114,7 +114,7 @@ openclaw channels status --probe
 | 私信被阻止                      | `openclaw pairing list signal`             | 批准发送者或调整 DM 策略。                      |
 | 群组回复未触发    | 检查群组白名单和提及模式 | 添加发送者/群组或放宽门控。                       |
 
-完整故障排查：[/channels/signal#troubleshooting](/channels/signal#troubleshooting)
+完整故障排查：[/channels/signal#troubleshooting](/tutorials/channels/signal#troubleshooting)
 
 ---
 
@@ -128,4 +128,4 @@ openclaw channels status --probe
 | 私信不处理                  | `openclaw pairing list matrix`               | 批准发送者或调整 DM 策略。             |
 | 加密房间失败                | 验证加密模块和加密设置 | 启用加密支持并重新加入/同步房间。 |
 
-完整故障排查：[/channels/matrix#troubleshooting](/channels/matrix#troubleshooting)
+完整故障排查：[/channels/matrix#troubleshooting](/tutorials/channels/matrix#troubleshooting)

@@ -30,7 +30,7 @@ openclaw plugins install ./extensions/matrix
 
 如果你在配置/引导设置过程中选择 Matrix，且检测到 git 检出，OpenClaw 将自动提供本地安装路径。
 
-详情：[插件](/tools/plugin)
+详情：[插件](/tutorials/tools/plugin)
 
 ---
 
@@ -129,7 +129,7 @@ E2EE 配置（启用端到端加密）：
 
 ## 多账户
 
-多账户支持：使用 `channels.matrix.accounts` 配置每个账户的凭证和可选的 `name`。参见 [`gateway/configuration`](/gateway/configuration#telegramaccounts--discordaccounts--slackaccounts--signalaccounts--imessageaccounts) 了解共享模式。
+多账户支持：使用 `channels.matrix.accounts` 配置每个账户的凭证和可选的 `name`。参见 [`gateway/configuration`](/tutorials/gateway/configuration#telegramaccounts--discordaccounts--slackaccounts--signalaccounts--imessageaccounts) 了解共享模式。
 
 每个账户作为独立的 Matrix 用户在任意 homeserver 上运行。每个账户的配置继承自顶级 `channels.matrix` 设置，并可覆盖任何选项（私聊策略、群组、加密等）。
 
@@ -269,13 +269,13 @@ openclaw pairing list matrix
 - 私聊被忽略：当 `channels.matrix.dm.policy="pairing"` 时发送者等待批准。
 - 加密房间失败：加密支持或加密设置不匹配。
 
-排查流程请参见：[/channels/troubleshooting](/channels/troubleshooting)。
+排查流程请参见：[/channels/troubleshooting](/tutorials/channels/troubleshooting)。
 
 ---
 
 ## 配置参考（Matrix）
 
-完整配置：[配置](/gateway/configuration)
+完整配置：[配置](/tutorials/gateway/configuration)
 
 提供商（Provider）选项：
 

@@ -26,7 +26,7 @@ description: "OpenClaw 核心概念：上下文（Context）。\"上下文\"是 
 - `/usage tokens` → 在正常回复后附加每次回复的用量信息。
 - `/compact` → 将较旧的历史记录摘要为紧凑条目以释放窗口空间。
 
-另见：[斜杠命令](/tools/slash-commands)、[Token 使用与成本](/reference/token-use)、[压缩](/concepts/compaction)。
+另见：[斜杠命令](/tutorials/tools/slash-commands)、[Token 使用与成本](/reference/token-use)、[压缩](/tutorials/concepts/compaction)。
 
 ---
 
@@ -103,7 +103,7 @@ Top tools (schema size):
 - 运行时元数据（主机/操作系统/模型/思考）。
 - 注入的工作区引导文件，位于 **Project Context** 下。
 
-完整分解：[系统提示词](/concepts/system-prompt)。
+完整分解：[系统提示词](/tutorials/concepts/system-prompt)。
 
 ---
 
@@ -152,7 +152,7 @@ Top tools (schema size):
   - 普通消息中的内联指令作为每条消息的提示。
 - **内联快捷方式**（仅限白名单发送者）：普通消息中的某些 `/...` Token 可以立即运行（例如："hey /status"），并在模型看到剩余文本之前被剥离。
 
-详情：[斜杠命令](/tools/slash-commands)。
+详情：[斜杠命令](/tutorials/tools/slash-commands)。
 
 ---
 
@@ -164,7 +164,7 @@ Top tools (schema size):
 - **压缩** 将摘要持久化到记录中，并保持最近的消息完整。
 - **修剪** 从运行的 _内存中_ 提示词中移除旧的工具结果，但不重写记录。
 
-文档：[会话](/concepts/session)、[压缩](/concepts/compaction)、[会话修剪](/concepts/session-pruning)。
+文档：[会话](/tutorials/concepts/session)、[压缩](/tutorials/concepts/compaction)、[会话修剪](/tutorials/concepts/session-pruning)。
 
 ---
 

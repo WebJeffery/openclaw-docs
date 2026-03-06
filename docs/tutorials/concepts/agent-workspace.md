@@ -10,7 +10,7 @@ description: "OpenClaw 核心概念：智能体工作区（Agent Workspace）。
 
 这与存储配置、凭证和会话（Session）的 `~/.openclaw/` 是分开的。
 
-**重要：** 工作区是 **默认 cwd**，而非硬隔离的沙箱（Sandbox）。工具会将相对路径解析到工作区，但绝对路径仍然可以访问宿主机上的其他位置，除非启用了沙箱。如果需要隔离，请使用 [`agents.defaults.sandbox`](/gateway/sandboxing)（和/或每个智能体的沙箱配置）。当启用沙箱且 `workspaceAccess` 不是 `"rw"` 时，工具在 `~/.openclaw/sandboxes` 下的沙箱工作区中操作，而非宿主工作区。
+**重要：** 工作区是 **默认 cwd**，而非硬隔离的沙箱（Sandbox）。工具会将相对路径解析到工作区，但绝对路径仍然可以访问宿主机上的其他位置，除非启用了沙箱。如果需要隔离，请使用 [`agents.defaults.sandbox`](/tutorials/gateway/sandboxing)（和/或每个智能体的沙箱配置）。当启用沙箱且 `workspaceAccess` 不是 `"rw"` 时，工具在 `~/.openclaw/sandboxes` 下的沙箱工作区中操作，而非宿主工作区。
 
 ---
 
@@ -94,7 +94,7 @@ description: "OpenClaw 核心概念：智能体工作区（Agent Workspace）。
   - 精选的长期记忆。
   - 仅在主要的私人会话中加载（不在共享/群组上下文中使用）。
 
-参见[记忆](/concepts/memory)了解工作流和自动记忆刷新。
+参见[记忆](/tutorials/concepts/memory)了解工作流和自动记忆刷新。
 
 - `skills/`（可选）
   - 工作区特定的技能。
@@ -216,5 +216,5 @@ git push
 
 ## 高级说明
 
-- 多智能体路由可以为每个智能体使用不同的工作区。参见[通道路由](/channels/channel-routing)了解路由配置。
+- 多智能体路由可以为每个智能体使用不同的工作区。参见[通道路由](/tutorials/channels/channel-routing)了解路由配置。
 - 如果启用了 `agents.defaults.sandbox`，非主会话可以在 `agents.defaults.sandbox.workspaceRoot` 下使用每会话的沙箱工作区。

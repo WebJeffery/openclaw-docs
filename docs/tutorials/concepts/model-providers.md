@@ -6,7 +6,7 @@ description: "OpenClaw 核心概念：模型提供商（Model Providers）。本
 
 # 模型提供商（Model Providers）
 
-本页涵盖 **LLM/模型提供商（Provider）**（非 WhatsApp/Telegram 等聊天通道）。关于模型选择规则，参见 [/concepts/models](/concepts/models)。
+本页涵盖 **LLM/模型提供商（Provider）**（非 WhatsApp/Telegram 等聊天通道）。关于模型选择规则，参见 [/concepts/models](/tutorials/concepts/models)。
 
 ---
 
@@ -119,7 +119,7 @@ OpenClaw 附带 pi-ai 目录。这些提供商 **不需要** `models.providers` 
   - OpenAI 兼容基础 URL：`https://api.cerebras.ai/v1`。
 - Mistral：`mistral`（`MISTRAL_API_KEY`）
 - GitHub Copilot：`github-copilot`（`COPILOT_GITHUB_TOKEN` / `GH_TOKEN` / `GITHUB_TOKEN`）
-- Hugging Face Inference：`huggingface`（`HUGGINGFACE_HUB_TOKEN` 或 `HF_TOKEN`）— OpenAI 兼容路由器；示例模型：`huggingface/deepseek-ai/DeepSeek-R1`；CLI：`openclaw onboard --auth-choice huggingface-api-key`。参见 [Hugging Face (Inference)](/providers/huggingface)。
+- Hugging Face Inference：`huggingface`（`HUGGINGFACE_HUB_TOKEN` 或 `HF_TOKEN`）— OpenAI 兼容路由器；示例模型：`huggingface/deepseek-ai/DeepSeek-R1`；CLI：`openclaw onboard --auth-choice huggingface-api-key`。参见 [Hugging Face (Inference)](/tutorials/providers/huggingface)。
 
 ---
 
@@ -196,7 +196,7 @@ openclaw models auth login --provider qwen-portal --set-default
 - `qwen-portal/coder-model`
 - `qwen-portal/vision-model`
 
-参见 [/providers/qwen](/providers/qwen) 了解设置详情和注意事项。
+参见 [/providers/qwen](/tutorials/providers/qwen) 了解设置详情和注意事项。
 
 ### Synthetic
 
@@ -233,7 +233,7 @@ MiniMax 通过 `models.providers` 配置，因为它使用自定义端点：
 - MiniMax（Anthropic 兼容）：`--auth-choice minimax-api`
 - 认证：`MINIMAX_API_KEY`
 
-参见 [/providers/minimax](/providers/minimax) 了解设置详情、模型选项和配置片段。
+参见 [/providers/minimax](/tutorials/providers/minimax) 了解设置详情、模型选项和配置片段。
 
 ### Ollama
 
@@ -257,7 +257,7 @@ ollama pull llama3.3
 }
 ```
 
-在本地 `http://127.0.0.1:11434/v1` 运行时，Ollama 会被自动检测。参见 [/providers/ollama](/providers/ollama) 了解模型推荐和自定义配置。
+在本地 `http://127.0.0.1:11434/v1` 运行时，Ollama 会被自动检测。参见 [/providers/ollama](/tutorials/providers/ollama) 了解模型推荐和自定义配置。
 
 ### vLLM
 
@@ -283,7 +283,7 @@ export VLLM_API_KEY="vllm-local"
 }
 ```
 
-参见 [/providers/vllm](/providers/vllm) 了解详情。
+参见 [/providers/vllm](/tutorials/providers/vllm) 了解详情。
 
 ### 本地代理（LM Studio、vLLM、LiteLLM 等）
 
@@ -341,4 +341,4 @@ openclaw models set opencode/claude-opus-4-6
 openclaw models list
 ```
 
-另见：[/gateway/configuration](/gateway/configuration) 了解完整配置示例。
+另见：[/gateway/configuration](/tutorials/gateway/configuration) 了解完整配置示例。

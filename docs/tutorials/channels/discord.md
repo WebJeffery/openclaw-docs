@@ -125,11 +125,11 @@ Bot Token 是你的 Bot 的登录密码，非常重要。如果忘记了：
 状态：已就绪，支持通过官方 Discord 网关进行私信和公会频道通信。
 
 
-  - [配对](/channels/pairing) — Discord 私信默认为配对模式。
+  - [配对](/tutorials/channels/pairing) — Discord 私信默认为配对模式。
 
-  - [斜杠命令](/tools/slash-commands) — 原生命令行为和命令目录。
+  - [斜杠命令](/tutorials/tools/slash-commands) — 原生命令行为和命令目录。
 
-  - [通道故障排查](/channels/troubleshooting) — 跨通道诊断和修复流程。
+  - [通道故障排查](/tutorials/channels/troubleshooting) — 跨通道诊断和修复流程。
 
 
 ## 快速设置（技术版）
@@ -380,7 +380,7 @@ Token 解析是账户感知的。配置 Token 值优先于环境变量回退。`
 - 原生命令授权使用与普通消息处理相同的 Discord 白名单/策略。
 - 命令可能在 Discord UI 中对未授权用户仍然可见；执行仍会强制 OpenClaw 授权并返回"未授权"。
 
-参见[斜杠命令](/tools/slash-commands)了解命令目录和行为。
+参见[斜杠命令](/tutorials/tools/slash-commands)了解命令目录和行为。
 
 ## 功能详情
 
@@ -608,7 +608,7 @@ Token 解析是账户感知的。配置 Token 值优先于环境变量回退。`
 
     如果审批因未知审批 ID 而失败，请验证审批者列表和功能启用状态。
 
-    相关文档：[执行审批](/tools/exec-approvals)
+    相关文档：[执行审批](/tutorials/tools/exec-approvals)
 
   
 
@@ -737,7 +737,7 @@ openclaw logs --follow
 
 主要参考：
 
-- [配置参考 - Discord](/gateway/configuration-reference#discord)
+- [配置参考 - Discord](/tutorials/gateway/configuration-reference#discord)
 
 高信号 Discord 字段：
 
@@ -759,7 +759,7 @@ openclaw logs --follow
 
 ## 相关
 
-- [配对](/channels/pairing)
-- [通道路由](/channels/channel-routing)
-- [故障排查](/channels/troubleshooting)
-- [斜杠命令](/tools/slash-commands)
+- [配对](/tutorials/channels/pairing)
+- [通道路由](/tutorials/channels/channel-routing)
+- [故障排查](/tutorials/channels/troubleshooting)
+- [斜杠命令](/tutorials/tools/slash-commands)

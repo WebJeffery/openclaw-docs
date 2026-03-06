@@ -49,7 +49,7 @@ description: "OpenClaw 快速入门：CLI 入门引导参考。本页面是  的
 
     - 默认 `~/.openclaw/workspace`（可配置）。
     - 生成首次运行引导所需的工作区文件。
-    - 工作区布局：[智能体（Agent）工作区](/concepts/agent-workspace)。
+    - 工作区布局：[智能体（Agent）工作区](/tutorials/concepts/agent-workspace)。
 
   ### 步骤 4：网关（Gateway）
 
@@ -60,14 +60,14 @@ description: "OpenClaw 快速入门：CLI 入门引导参考。本页面是  的
 
   ### 步骤 5：通道（Channel）
 
-    - [WhatsApp](/channels/whatsapp)：可选 QR 码登录
-    - [Telegram](/channels/telegram)：bot token
-    - [Discord](/channels/discord)：bot token
-    - [Google Chat](/channels/googlechat)：服务账号 JSON + webhook 受众
-    - [Mattermost](/channels/mattermost) 插件：bot token + 基础 URL
-    - [Signal](/channels/signal)：可选 `signal-cli` 安装 + 账号配置
-    - [BlueBubbles](/channels/bluebubbles)：推荐用于 iMessage；服务器 URL + 密码 + webhook
-    - [iMessage](/channels/imessage)：旧版 `imsg` CLI 路径 + 数据库访问
+    - [WhatsApp](/tutorials/channels/whatsapp)：可选 QR 码登录
+    - [Telegram](/tutorials/channels/telegram)：bot token
+    - [Discord](/tutorials/channels/discord)：bot token
+    - [Google Chat](/tutorials/channels/googlechat)：服务账号 JSON + webhook 受众
+    - [Mattermost](/tutorials/channels/mattermost) 插件：bot token + 基础 URL
+    - [Signal](/tutorials/channels/signal)：可选 `signal-cli` 安装 + 账号配置
+    - [BlueBubbles](/tutorials/channels/bluebubbles)：推荐用于 iMessage；服务器 URL + 密码 + webhook
+    - [iMessage](/tutorials/channels/imessage)：旧版 `imsg` CLI 路径 + 数据库访问
     - DM 安全：默认为配对模式。首条 DM 发送验证码；通过
       `openclaw pairing approve <channel> <code>` 批准或使用白名单。
 
@@ -208,7 +208,7 @@ description: "OpenClaw 快速入门：CLI 入门引导参考。本页面是  的
 ::: details Vercel AI Gateway
 
     提示输入 `AI_GATEWAY_API_KEY`。
-    更多详情：[Vercel AI Gateway](/providers/vercel-ai-gateway)。
+    更多详情：[Vercel AI Gateway](/tutorials/providers/vercel-ai-gateway)。
   
 
 :::
@@ -216,7 +216,7 @@ description: "OpenClaw 快速入门：CLI 入门引导参考。本页面是  的
 ::: details Cloudflare AI Gateway
 
     提示输入账号 ID、网关 ID 和 `CLOUDFLARE_AI_GATEWAY_API_KEY`。
-    更多详情：[Cloudflare AI Gateway](/providers/cloudflare-ai-gateway)。
+    更多详情：[Cloudflare AI Gateway](/tutorials/providers/cloudflare-ai-gateway)。
   
 
 :::
@@ -224,7 +224,7 @@ description: "OpenClaw 快速入门：CLI 入门引导参考。本页面是  的
 ::: details MiniMax M2.1
 
     配置自动写入。
-    更多详情：[MiniMax](/providers/minimax)。
+    更多详情：[MiniMax](/tutorials/providers/minimax)。
   
 
 :::
@@ -232,7 +232,7 @@ description: "OpenClaw 快速入门：CLI 入门引导参考。本页面是  的
 ::: details Synthetic（Anthropic 兼容）
 
     提示输入 `SYNTHETIC_API_KEY`。
-    更多详情：[Synthetic](/providers/synthetic)。
+    更多详情：[Synthetic](/tutorials/providers/synthetic)。
   
 
 :::
@@ -240,7 +240,7 @@ description: "OpenClaw 快速入门：CLI 入门引导参考。本页面是  的
 ::: details Moonshot 和 Kimi Coding
 
     Moonshot (Kimi K2) 和 Kimi Coding 的配置自动写入。
-    更多详情：[Moonshot AI (Kimi + Kimi Coding)](/providers/moonshot)。
+    更多详情：[Moonshot AI (Kimi + Kimi Coding)](/tutorials/providers/moonshot)。
   
 
 :::

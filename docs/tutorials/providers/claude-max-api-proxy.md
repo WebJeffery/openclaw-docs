@@ -159,5 +159,5 @@ launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.claude-max-api.plist
 
 ## 另请参阅
 
-- [Anthropic 提供商](/providers/anthropic) - OpenClaw 与 Claude setup-token 或 API 密钥的原生集成
-- [OpenAI 提供商](/providers/openai) - 用于 OpenAI/Codex 订阅
+- [Anthropic 提供商](/tutorials/providers/anthropic) - OpenClaw 与 Claude setup-token 或 API 密钥的原生集成
+- [OpenAI 提供商](/tutorials/providers/openai) - 用于 OpenAI/Codex 订阅

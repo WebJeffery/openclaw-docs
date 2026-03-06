@@ -34,5 +34,5 @@ openclaw onboard --zai-api-key "$ZAI_API_KEY"
 ## 注意事项
 
 - GLM 模型以 `zai/<model>` 格式引用（示例：`zai/glm-5`）。
-- 模型系列概览请参见 [/providers/glm](/providers/glm)。
+- 模型系列概览请参见 [/providers/glm](/tutorials/providers/glm)。
 - Z.AI 使用 Bearer 认证和你的 API 密钥。

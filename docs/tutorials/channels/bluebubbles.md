@@ -160,7 +160,7 @@ openclaw channels add bluebubbles --http-url http://192.168.1.100:1234 --passwor
 - 批准方式：
   - `openclaw pairing list bluebubbles`
   - `openclaw pairing approve bluebubbles <CODE>`
-- 配对是默认的 Token 交换方式。详情：[配对](/channels/pairing)
+- 配对是默认的 Token 交换方式。详情：[配对](/tutorials/channels/pairing)
 
 群组：
 
@@ -273,7 +273,7 @@ OpenClaw 可能会显示_短_消息 ID（例如 `1`、`2`）以节省 Token。
 - 模板：`\{\{MessageSidFull\}\}`、`\{\{ReplyToIdFull\}\}`
 - 上下文：入站有效载荷中的 `MessageSidFull` / `ReplyToIdFull`
 
-参见[配置](/gateway/configuration)了解模板变量。
+参见[配置](/tutorials/gateway/configuration)了解模板变量。
 
 ---
 
@@ -303,7 +303,7 @@ OpenClaw 可能会显示_短_消息 ID（例如 `1`、`2`）以节省 Token。
 
 ## 配置参考
 
-完整配置：[配置](/gateway/configuration)
+完整配置：[配置](/tutorials/gateway/configuration)
 
 提供商（Provider）选项：
 
@@ -350,7 +350,7 @@ OpenClaw 可能会显示_短_消息 ID（例如 `1`、`2`）以节省 Token。
 
 - Webhook 请求通过比较 `guid`/`password` 查询参数或请求头与 `channels.bluebubbles.password` 进行验证。来自 `localhost` 的请求也会被接受。
 - 请保密 API 密码和 Webhook 端点（视为凭证处理）。
-- Localhost 信任意味着同主机反向代理可能无意中绕过密码。如果你为网关（Gateway）设置代理，请在代理端要求认证并配置 `gateway.trustedProxies`。参见[网关安全](/gateway/security#reverse-proxy-configuration)。
+- Localhost 信任意味着同主机反向代理可能无意中绕过密码。如果你为网关（Gateway）设置代理，请在代理端要求认证并配置 `gateway.trustedProxies`。参见[网关安全](/tutorials/gateway/security#reverse-proxy-configuration)。
 - 如果将 BlueBubbles 服务器暴露到局域网外，请启用 HTTPS + 防火墙规则。
 
 ---
@@ -365,4 +365,4 @@ OpenClaw 可能会显示_短_消息 ID（例如 `1`、`2`）以节省 Token。
 - OpenClaw 会根据 BlueBubbles 服务器的 macOS 版本自动隐藏已知不可用的操作。如果在 macOS 26（Tahoe）上编辑功能仍然显示，请手动通过 `channels.bluebubbles.actions.edit=false` 禁用它。
 - 查看状态/健康信息：`openclaw status --all` 或 `openclaw status --deep`。
 
-有关通道（Channel）工作流的一般参考，请参见[通道](/channels)和[插件](/tools/plugin)指南。
+有关通道（Channel）工作流的一般参考，请参见[通道](/channels)和[插件](/tutorials/tools/plugin)指南。

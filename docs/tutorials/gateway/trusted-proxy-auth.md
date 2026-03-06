@@ -279,7 +279,7 @@ location / {
 
 ## 相关
 
-- [安全](/gateway/security) — 完整安全指南
-- [配置](/gateway/configuration) — 配置参考
-- [远程访问](/gateway/remote) — 其他远程访问模式
-- [Tailscale](/gateway/tailscale) — 仅 tailnet 访问的更简单替代方案
+- [安全](/tutorials/gateway/security) — 完整安全指南
+- [配置](/tutorials/gateway/configuration) — 配置参考
+- [远程访问](/tutorials/gateway/remote) — 其他远程访问模式
+- [Tailscale](/tutorials/gateway/tailscale) — 仅 tailnet 访问的更简单替代方案

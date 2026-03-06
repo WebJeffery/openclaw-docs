@@ -87,8 +87,8 @@ OpenClaw 从其工作区（Workspace）目录读取操作指令和"记忆"。
 openclaw setup
 ```
 
-完整的工作区布局和备份指南：[智能体（Agent）工作区](/concepts/agent-workspace)
-记忆工作流：[记忆](/concepts/memory)
+完整的工作区布局和备份指南：[智能体（Agent）工作区](/tutorials/concepts/agent-workspace)
+记忆工作流：[记忆](/tutorials/concepts/memory)
 
 可选：通过 `agents.defaults.workspace` 选择不同的工作区（支持 `~`）。
 
@@ -226,10 +226,10 @@ openclaw health --json   # gateway health snapshot (WS)
 
 - WebChat：[WebChat](/web/webchat)
 - 网关运维：[网关运维手册](/gateway)
-- 定时任务与唤醒：[定时任务](/automation/cron-jobs)
+- 定时任务与唤醒：[定时任务](/tutorials/automation/cron-jobs)
 - macOS 菜单栏配套应用：[OpenClaw macOS 应用](/platforms/macos)
 - iOS 节点应用：[iOS 应用](/platforms/ios)
 - Android 节点应用：[Android 应用](/platforms/android)
 - Windows 状态：[Windows (WSL2)](/platforms/windows)
 - Linux 状态：[Linux 应用](/platforms/linux)
-- 安全：[安全](/gateway/security)
+- 安全：[安全](/tutorials/gateway/security)

@@ -37,7 +37,7 @@ openclaw onboard --auth-choice qianfan-api-key
 
 ## 相关文档
 
-- [OpenClaw 配置](/gateway/configuration)
-- [模型提供商](/concepts/model-providers)
-- [智能体（Agent）设置](/concepts/agent)
+- [OpenClaw 配置](/tutorials/gateway/configuration)
+- [模型提供商](/tutorials/concepts/model-providers)
+- [智能体（Agent）设置](/tutorials/concepts/agent)
 - [千帆 API 文档](https://cloud.baidu.com/doc/qianfan-api/s/3m7of64lb)

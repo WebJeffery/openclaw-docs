@@ -109,7 +109,7 @@ description: "OpenClaw 通道接入：Signal（signal-cli）。状态：外部 C
 }
 ```
 
-多账户支持：使用 `channels.signal.accounts` 进行按账户配置和可选的 `name`。参见 [`gateway/configuration`](/gateway/configuration#telegramaccounts--discordaccounts--slackaccounts--signalaccounts--imessageaccounts) 了解共享模式。
+多账户支持：使用 `channels.signal.accounts` 进行按账户配置和可选的 `name`。参见 [`gateway/configuration`](/tutorials/gateway/configuration#telegramaccounts--discordaccounts--slackaccounts--signalaccounts--imessageaccounts) 了解共享模式。
 
 ---
 
@@ -204,7 +204,7 @@ openclaw channels status --probe
 - 批准方式：
   - `openclaw pairing list signal`
   - `openclaw pairing approve signal <CODE>`
-- 配对是 Signal 私信的默认令牌交换方式。详情：[配对](/channels/pairing)
+- 配对是 Signal 私信的默认令牌交换方式。详情：[配对](/tutorials/channels/pairing)
 - 仅有 UUID 的发送者（来自 `sourceUuid`）以 `uuid:<id>` 形式存储在 `channels.signal.allowFrom` 中。
 
 群组：
@@ -309,7 +309,7 @@ pgrep -af signal-cli
 grep -i "signal" "/tmp/openclaw/openclaw-$(date +%Y-%m-%d).log" | tail -20
 ```
 
-分流流程：[/channels/troubleshooting](/channels/troubleshooting)。
+分流流程：[/channels/troubleshooting](/tutorials/channels/troubleshooting)。
 
 ---
 
@@ -324,7 +324,7 @@ grep -i "signal" "/tmp/openclaw/openclaw-$(date +%Y-%m-%d).log" | tail -20
 
 ## 配置参考（Signal）
 
-完整配置：[配置](/gateway/configuration)
+完整配置：[配置](/tutorials/gateway/configuration)
 
 提供商选项：
 

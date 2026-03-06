@@ -9,11 +9,11 @@ description: "OpenClaw 通道接入：WhatsApp（Web 通道）。状态：通过
 状态：通过 WhatsApp Web（Baileys）实现，已可投入生产使用。网关管理链接会话。
 
 
-  - [配对](/channels/pairing) — 未知发送者的默认私信策略为配对模式。
+  - [配对](/tutorials/channels/pairing) — 未知发送者的默认私信策略为配对模式。
 
-  - [通道故障排查](/channels/troubleshooting) — 跨通道诊断和修复手册。
+  - [通道故障排查](/tutorials/channels/troubleshooting) — 跨通道诊断和修复手册。
 
-  - [网关配置](/gateway/configuration) — 完整的通道配置模式和示例。
+  - [网关配置](/tutorials/gateway/configuration) — 完整的通道配置模式和示例。
 
 ---
 
@@ -496,7 +496,7 @@ openclaw logs --follow
 
 主要参考：
 
-- [配置参考 - WhatsApp](/gateway/configuration-reference#whatsapp)
+- [配置参考 - WhatsApp](/tutorials/gateway/configuration-reference#whatsapp)
 
 高信号 WhatsApp 字段：
 
@@ -510,6 +510,6 @@ openclaw logs --follow
 
 ## 相关
 
-- [配对](/channels/pairing)
-- [通道路由](/channels/channel-routing)
-- [故障排查](/channels/troubleshooting)
+- [配对](/tutorials/channels/pairing)
+- [通道路由](/tutorials/channels/channel-routing)
+- [故障排查](/tutorials/channels/troubleshooting)

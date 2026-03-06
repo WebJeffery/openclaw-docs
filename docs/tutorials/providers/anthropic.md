@@ -131,7 +131,7 @@ OpenClaw 支持 Anthropic 的提示缓存功能。这是**仅限 API** 的功能
 
 我们建议迁移到新的 `cacheRetention` 参数。
 
-OpenClaw 在 Anthropic API 请求中包含了 `extended-cache-ttl-2025-04-11` beta 标志；如果你覆盖了提供商头部信息，请保留它（参见 [/gateway/configuration](/gateway/configuration)）。
+OpenClaw 在 Anthropic API 请求中包含了 `extended-cache-ttl-2025-04-11` beta 标志；如果你覆盖了提供商头部信息，请保留它（参见 [/gateway/configuration](/tutorials/gateway/configuration)）。
 
 ## 方式 B：Claude setup-token
 
@@ -175,8 +175,8 @@ openclaw onboard --auth-choice setup-token
 ## 注意事项
 
 - 使用 `claude setup-token` 生成 setup-token 并粘贴，或在网关（Gateway）主机上运行 `openclaw models auth setup-token`。
-- 如果在 Claude 订阅中看到 "OAuth token refresh failed ..." 错误，请使用 setup-token 重新认证。参见 [/gateway/troubleshooting#oauth-token-refresh-failed-anthropic-claude-subscription](/gateway/troubleshooting#oauth-token-refresh-failed-anthropic-claude-subscription)。
-- 认证详情和复用规则见 [/concepts/oauth](/concepts/oauth)。
+- 如果在 Claude 订阅中看到 "OAuth token refresh failed ..." 错误，请使用 setup-token 重新认证。参见 [/gateway/troubleshooting#oauth-token-refresh-failed-anthropic-claude-subscription](/tutorials/gateway/troubleshooting#oauth-token-refresh-failed-anthropic-claude-subscription)。
+- 认证详情和复用规则见 [/concepts/oauth](/tutorials/concepts/oauth)。
 
 ## 故障排查
 
@@ -203,4 +203,4 @@ openclaw onboard --auth-choice setup-token
 - 检查 `openclaw models status --json` 中的 `auth.unusableProfiles`。
 - 添加另一个 Anthropic 配置文件或等待冷却期结束。
 
-更多信息：[/gateway/troubleshooting](/gateway/troubleshooting) 和 [/help/faq](/help/faq)。
+更多信息：[/gateway/troubleshooting](/tutorials/gateway/troubleshooting) 和 [/help/faq](/tutorials/help/faq)。

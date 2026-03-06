@@ -89,7 +89,7 @@ description: "OpenClaw 核心概念：会话修剪（Session Pruning）。会话
 ## 与其他限制的交互
 
 - 内置工具已经截断自己的输出；会话修剪是额外的一层，防止长时间运行的聊天在模型上下文中累积过多工具输出。
-- 压缩是独立的：压缩摘要化并持久化，修剪是每请求的临时操作。参见 [/concepts/compaction](/concepts/compaction)。
+- 压缩是独立的：压缩摘要化并持久化，修剪是每请求的临时操作。参见 [/concepts/compaction](/tutorials/concepts/compaction)。
 
 ---
 
@@ -140,4 +140,4 @@ description: "OpenClaw 核心概念：会话修剪（Session Pruning）。会话
 }
 ```
 
-参见配置参考：[网关配置](/gateway/configuration)
+参见配置参考：[网关配置](/tutorials/gateway/configuration)

@@ -261,6 +261,6 @@ openclaw channels status
 
 相关文档：
 
-- [网关配置](/gateway/configuration)
-- [安全](/gateway/security)
-- [表情回应](/tools/reactions)
+- [网关配置](/tutorials/gateway/configuration)
+- [安全](/tutorials/gateway/security)
+- [表情回应](/tutorials/tools/reactions)

@@ -193,5 +193,5 @@ Bonjour/DNS-SD 经常将服务实例名称中的字节转义为十进制 `\DDD`
 
 ## 相关文档
 
-- 发现策略和传输选择：[发现](/gateway/discovery)
-- 节点配对 + 审批：[网关（Gateway）配对](/gateway/pairing)
+- 发现策略和传输选择：[发现](/tutorials/gateway/discovery)
+- 节点配对 + 审批：[网关（Gateway）配对](/tutorials/gateway/pairing)

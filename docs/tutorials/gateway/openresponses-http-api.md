@@ -282,7 +282,7 @@ URL 获取默认值：
 - URL 白名单在获取前和重定向跳转时强制执行。
 - 白名单主机名不会绕过私有/内部 IP 阻止。
 - 对于面向互联网的网关（Gateway），除应用级防护外还应应用网络出口控制。
-  参阅[安全](/gateway/security)。
+  参阅[安全](/tutorials/gateway/security)。
 
 ---
 

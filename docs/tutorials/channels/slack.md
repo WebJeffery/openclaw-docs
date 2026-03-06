@@ -9,11 +9,11 @@ description: "OpenClaw 通道接入：Slack。状态：通过 Slack 应用集成
 状态：通过 Slack 应用集成实现的私信 + 频道功能，已可投入生产使用。默认模式为 Socket Mode；HTTP Events API 模式也受支持。
 
 
-  - [配对](/channels/pairing) — Slack 私信默认为配对模式。
+  - [配对](/tutorials/channels/pairing) — Slack 私信默认为配对模式。
 
-  - [斜杠命令](/tools/slash-commands) — 原生命令行为和命令目录。
+  - [斜杠命令](/tutorials/tools/slash-commands) — 原生命令行为和命令目录。
 
-  - [通道故障排查](/channels/troubleshooting) — 跨通道诊断和修复手册。
+  - [通道故障排查](/tutorials/channels/troubleshooting) — 跨通道诊断和修复手册。
 
 ---
 
@@ -482,7 +482,7 @@ openclaw pairing list slack
 
 主要参考：
 
-- [配置参考 - Slack](/gateway/configuration-reference#slack)
+- [配置参考 - Slack](/tutorials/gateway/configuration-reference#slack)
 
   高信号 Slack 字段：
   - 模式/认证：`mode`、`botToken`、`appToken`、`signingSecret`、`webhookPath`、`accounts.*`
@@ -496,8 +496,8 @@ openclaw pairing list slack
 
 ## 相关
 
-- [配对](/channels/pairing)
-- [通道路由](/channels/channel-routing)
-- [故障排查](/channels/troubleshooting)
-- [配置](/gateway/configuration)
-- [斜杠命令](/tools/slash-commands)
+- [配对](/tutorials/channels/pairing)
+- [通道路由](/tutorials/channels/channel-routing)
+- [故障排查](/tutorials/channels/troubleshooting)
+- [配置](/tutorials/gateway/configuration)
+- [斜杠命令](/tutorials/tools/slash-commands)

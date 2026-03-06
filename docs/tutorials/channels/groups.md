@@ -68,7 +68,7 @@ requireMention? yes -> 被提及？ 否 -> 仅存储为上下文
 - **私信**：完整工具（主机）
 - **群组**：沙箱 + 受限工具（Docker）
 
-> 如果你需要真正分离的工作空间/角色（"个人"和"公开"绝不能混合），使用第二个智能体 + 绑定。参见 [多智能体路由](/concepts/multi-agent)。
+> 如果你需要真正分离的工作空间/角色（"个人"和"公开"绝不能混合），使用第二个智能体 + 绑定。参见 [多智能体路由](/tutorials/concepts/multi-agent)。
 
 示例（私信在主机上，群组沙箱化 + 仅消息工具）：
 
@@ -119,9 +119,9 @@ requireMention? yes -> 被提及？ 否 -> 仅存储为上下文
 
 相关：
 
-- 配置键和默认值：[网关配置](/gateway/configuration#agentsdefaultssandbox)
-- 调试工具为何被阻止：[沙箱 vs 工具策略 vs 提权](/gateway/sandbox-vs-tool-policy-vs-elevated)
-- 绑定挂载详情：[沙箱](/gateway/sandboxing#custom-bind-mounts)
+- 配置键和默认值：[网关配置](/tutorials/gateway/configuration#agentsdefaultssandbox)
+- 调试工具为何被阻止：[沙箱 vs 工具策略 vs 提权](/tutorials/gateway/sandbox-vs-tool-policy-vs-elevated)
+- 绑定挂载详情：[沙箱](/tutorials/gateway/sandboxing#custom-bind-mounts)
 
 ---
 
@@ -392,4 +392,4 @@ requireMention? yes -> 被提及？ 否 -> 仅存储为上下文
 
 ## WhatsApp 特定说明
 
-参见 [群组消息](/channels/group-messages) 了解 WhatsApp 专有行为（历史注入、提及处理细节）。
+参见 [群组消息](/tutorials/channels/group-messages) 了解 WhatsApp 专有行为（历史注入、提及处理细节）。

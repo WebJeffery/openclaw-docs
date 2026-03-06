@@ -10,7 +10,7 @@ OpenClaw 支持 OAuth 和 API 密钥用于模型提供商（Provider）认证。
 账户，我们推荐使用 **API 密钥**。对于 Claude 订阅访问，
 请使用 `claude setup-token` 创建的长期 Token。
 
-完整的 OAuth 流程和存储布局请参阅 [/concepts/oauth](/concepts/oauth)。
+完整的 OAuth 流程和存储布局请参阅 [/concepts/oauth](/tutorials/concepts/oauth)。
 
 ---
 
@@ -92,7 +92,7 @@ openclaw models status --check
 ```
 
 可选的运维脚本（systemd/Termux）文档：
-[/automation/auth-monitoring](/automation/auth-monitoring)
+[/automation/auth-monitoring](/tutorials/automation/auth-monitoring)
 
 > `claude setup-token` 需要交互式 TTY。
 

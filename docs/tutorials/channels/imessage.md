@@ -16,11 +16,11 @@ description: "OpenClaw 通道接入：iMessage（旧版：imsg）。对于新的
 状态：旧版外部 CLI 集成。网关启动 `imsg rpc` 并通过 stdio 上的 JSON-RPC 进行通信（没有单独的守护进程/端口）。
 
 
-  - [BlueBubbles（推荐）](/channels/bluebubbles) — 新设置首选的 iMessage 方案。
+  - [BlueBubbles（推荐）](/tutorials/channels/bluebubbles) — 新设置首选的 iMessage 方案。
 
-  - [配对](/channels/pairing) — iMessage 私信默认为配对模式。
+  - [配对](/tutorials/channels/pairing) — iMessage 私信默认为配对模式。
 
-  - [配置参考](/gateway/configuration-reference#imessage) — 完整的 iMessage 字段参考。
+  - [配置参考](/tutorials/gateway/configuration-reference#imessage) — 完整的 iMessage 字段参考。
 
 ---
 
@@ -387,7 +387,7 @@ imsg send <handle> "test"
 
 ## 配置参考指引
 
-- [配置参考 - iMessage](/gateway/configuration-reference#imessage)
-- [网关配置](/gateway/configuration)
-- [配对](/channels/pairing)
-- [BlueBubbles](/channels/bluebubbles)
+- [配置参考 - iMessage](/tutorials/gateway/configuration-reference#imessage)
+- [网关配置](/tutorials/gateway/configuration)
+- [配对](/tutorials/channels/pairing)
+- [BlueBubbles](/tutorials/channels/bluebubbles)

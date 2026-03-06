@@ -48,7 +48,7 @@ description: "OpenClaw 核心概念：智能体循环（Agent Loop）（OpenClaw
 - 运行按会话（Session）键（会话通道）串行化，也可以选择通过全局通道处理。
 - 这可以防止工具/会话竞争，并保持会话历史的一致性。
 - 消息通道（Channel）可以选择队列模式（collect/steer/followup）来输入到此通道系统。
-  参见[命令队列](/concepts/queue)。
+  参见[命令队列](/tutorials/concepts/queue)。
 
 ---
 
@@ -65,7 +65,7 @@ description: "OpenClaw 核心概念：智能体循环（Agent Loop）（OpenClaw
 
 - 系统提示词由 OpenClaw 的基础提示词、技能提示词、引导上下文和每次运行的覆盖项构建。
 - 强制执行模型特定的限制和压缩（Compaction）保留 Token。
-- 参见[系统提示词](/concepts/system-prompt)了解模型看到的内容。
+- 参见[系统提示词](/tutorials/concepts/system-prompt)了解模型看到的内容。
 
 ---
 
@@ -81,7 +81,7 @@ OpenClaw 有两套钩子系统：
 - **`agent:bootstrap`**：在系统提示词最终确定之前构建引导文件时运行。用于添加/移除引导上下文文件。
 - **命令钩子**：`/new`、`/reset`、`/stop` 和其他命令事件（参见钩子文档）。
 
-参见[钩子](/automation/hooks)了解设置和示例。
+参见[钩子](/tutorials/automation/hooks)了解设置和示例。
 
 ### 插件钩子（智能体 + 网关生命周期）
 
@@ -96,7 +96,7 @@ OpenClaw 有两套钩子系统：
 - **`session_start` / `session_end`**：会话生命周期边界。
 - **`gateway_start` / `gateway_stop`**：网关生命周期事件。
 
-参见[插件](/tools/plugin#plugin-hooks)了解钩子 API 和注册详情。
+参见[插件](/tutorials/tools/plugin#plugin-hooks)了解钩子 API 和注册详情。
 
 ---
 
@@ -105,7 +105,7 @@ OpenClaw 有两套钩子系统：
 - 助手增量从 pi-agent-core 流式输出并作为 `assistant` 事件发出。
 - 块流式输出可以在 `text_end` 或 `message_end` 时发出部分回复。
 - 推理流式输出可以作为单独的流或块回复发出。
-- 参见[流式输出](/concepts/streaming)了解分块和块回复行为。
+- 参见[流式输出](/tutorials/concepts/streaming)了解分块和块回复行为。
 
 ---
 
@@ -133,7 +133,7 @@ OpenClaw 有两套钩子系统：
 
 - 自动压缩发出 `compaction` 流事件，并可能触发重试。
 - 重试时，内存缓冲区和工具摘要会被重置以避免重复输出。
-- 参见[压缩](/concepts/compaction)了解压缩管道。
+- 参见[压缩](/tutorials/concepts/compaction)了解压缩管道。
 
 ---
 

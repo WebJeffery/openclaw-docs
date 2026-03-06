@@ -276,4 +276,4 @@ doctor 运行。
 Doctor 在缺少工作区（Workspace）记忆系统时建议添加，并在工作区（Workspace）不在 git 下时打印备份提示。
 
 工作区（Workspace）结构和 git 备份（推荐私有 GitHub 或 GitLab）的完整指南请参阅
-[/concepts/agent-workspace](/concepts/agent-workspace)。
+[/concepts/agent-workspace](/tutorials/concepts/agent-workspace)。

@@ -176,7 +176,7 @@ IRC 频道有两个独立的"门控"：
 - `toolsBySender` 键可以是昵称（例如 `"eigen"`）或完整的 hostmask（`"eigen!~eigen@174.127.248.171"`）以进行更强的身份匹配。
 - 第一个匹配的发送者策略生效；`"*"` 是通配符回退。
 
-关于群组访问 vs 提及门控（以及它们如何交互）的更多信息，参见：[/channels/groups](/channels/groups)。
+关于群组访问 vs 提及门控（以及它们如何交互）的更多信息，参见：[/channels/groups](/tutorials/channels/groups)。
 
 ## NickServ
 

@@ -6,7 +6,7 @@ description: "OpenClaw Gateway：网关（Gateway）故障排除。本页是深�
 
 # 网关（Gateway）故障排除
 
-本页是深度排查手册。如果你想先进行快速分诊流程，请从 [/help/troubleshooting](/help/troubleshooting) 开始。
+本页是深度排查手册。如果你想先进行快速分诊流程，请从 [/help/troubleshooting](/tutorials/help/troubleshooting) 开始。
 
 ---
 
@@ -56,9 +56,9 @@ openclaw logs --follow
 
 相关：
 
-- [/channels/troubleshooting](/channels/troubleshooting)
-- [/channels/pairing](/channels/pairing)
-- [/channels/groups](/channels/groups)
+- [/channels/troubleshooting](/tutorials/channels/troubleshooting)
+- [/channels/pairing](/tutorials/channels/pairing)
+- [/channels/groups](/tutorials/channels/groups)
 
 ---
 
@@ -89,8 +89,8 @@ openclaw gateway status --json
 相关：
 
 - [/web/control-ui](/web/control-ui)
-- [/gateway/authentication](/gateway/authentication)
-- [/gateway/remote](/gateway/remote)
+- [/gateway/authentication](/tutorials/gateway/authentication)
+- [/gateway/remote](/tutorials/gateway/remote)
 
 ---
 
@@ -120,9 +120,9 @@ openclaw gateway status --deep
 
 相关：
 
-- [/gateway/background-process](/gateway/background-process)
-- [/gateway/configuration](/gateway/configuration)
-- [/gateway/doctor](/gateway/doctor)
+- [/gateway/background-process](/tutorials/gateway/background-process)
+- [/gateway/configuration](/tutorials/gateway/configuration)
+- [/gateway/doctor](/tutorials/gateway/doctor)
 
 ---
 
@@ -152,10 +152,10 @@ openclaw config get channels
 
 相关：
 
-- [/channels/troubleshooting](/channels/troubleshooting)
-- [/channels/whatsapp](/channels/whatsapp)
-- [/channels/telegram](/channels/telegram)
-- [/channels/discord](/channels/discord)
+- [/channels/troubleshooting](/tutorials/channels/troubleshooting)
+- [/channels/whatsapp](/tutorials/channels/whatsapp)
+- [/channels/telegram](/tutorials/channels/telegram)
+- [/channels/discord](/tutorials/channels/discord)
 
 ---
 
@@ -186,9 +186,9 @@ openclaw logs --follow
 
 相关：
 
-- [/automation/troubleshooting](/automation/troubleshooting)
-- [/automation/cron-jobs](/automation/cron-jobs)
-- [/gateway/heartbeat](/gateway/heartbeat)
+- [/automation/troubleshooting](/tutorials/automation/troubleshooting)
+- [/automation/cron-jobs](/tutorials/automation/cron-jobs)
+- [/gateway/heartbeat](/tutorials/gateway/heartbeat)
 
 ---
 
@@ -221,7 +221,7 @@ openclaw status
 
 - [/nodes/troubleshooting](/nodes/troubleshooting)
 - [/nodes/index](/nodes/index)
-- [/tools/exec-approvals](/tools/exec-approvals)
+- [/tools/exec-approvals](/tutorials/tools/exec-approvals)
 
 ---
 
@@ -252,9 +252,9 @@ openclaw doctor
 
 相关：
 
-- [/tools/browser-linux-troubleshooting](/tools/browser-linux-troubleshooting)
-- [/tools/chrome-extension](/tools/chrome-extension)
-- [/tools/browser](/tools/browser)
+- [/tools/browser-linux-troubleshooting](/tutorials/tools/browser-linux-troubleshooting)
+- [/tools/chrome-extension](/tutorials/tools/chrome-extension)
+- [/tools/browser](/tutorials/tools/browser)
 
 ---
 
@@ -328,6 +328,6 @@ openclaw gateway restart
 
 相关：
 
-- [/gateway/pairing](/gateway/pairing)
-- [/gateway/authentication](/gateway/authentication)
-- [/gateway/background-process](/gateway/background-process)
+- [/gateway/pairing](/tutorials/gateway/pairing)
+- [/gateway/authentication](/tutorials/gateway/authentication)
+- [/gateway/background-process](/tutorials/gateway/background-process)

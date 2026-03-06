@@ -43,7 +43,7 @@ openclaw sandbox explain --json
 - `"non-main"`：只有非 main 会话（Session）被沙箱（Sandbox）化（在群组/通道（Channel）中常见的"意外"）。
 - `"all"`：所有内容都被沙箱（Sandbox）化。
 
-参阅[沙箱（Sandbox）](/gateway/sandboxing)了解完整矩阵（作用域、工作区（Workspace）挂载、镜像）。
+参阅[沙箱（Sandbox）](/tutorials/gateway/sandboxing)了解完整矩阵（作用域、工作区（Workspace）挂载、镜像）。
 
 ### 绑定挂载（安全快速检查）
 
@@ -118,7 +118,7 @@ openclaw sandbox explain --json
 - 启用：`tools.elevated.enabled`（以及可选的 `agents.list[].tools.elevated.enabled`）
 - 发送者白名单：`tools.elevated.allowFrom.<provider>`（以及可选的 `agents.list[].tools.elevated.allowFrom.<provider>`）
 
-参阅[提权模式](/tools/elevated)。
+参阅[提权模式](/tutorials/tools/elevated)。
 
 ---
 

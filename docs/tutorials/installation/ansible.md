@@ -55,7 +55,7 @@ Ansible playbook 会安装并配置以下内容：
 5. **OpenClaw**（基于主机安装，非容器化）
 6. **Systemd 服务**（带安全加固的自动启动）
 
-注意：网关（Gateway）**直接运行在主机上**（非 Docker 内），但智能体（Agent）沙箱（Sandbox）使用 Docker 进行隔离。详见 [沙箱](/gateway/sandboxing)。
+注意：网关（Gateway）**直接运行在主机上**（非 Docker 内），但智能体（Agent）沙箱（Sandbox）使用 Docker 进行隔离。详见 [沙箱](/tutorials/gateway/sandboxing)。
 
 ---
 
@@ -116,7 +116,7 @@ nmap -p- YOUR_SERVER_IP
 
 Docker 用于**智能体沙箱**（隔离的工具执行），而非运行网关本身。网关仅绑定到 localhost，通过 Tailscale VPN 访问。
 
-参见 [多智能体沙箱与工具](/tools/multi-agent-sandbox-tools) 了解沙箱配置。
+参见 [多智能体沙箱与工具](/tutorials/tools/multi-agent-sandbox-tools) 了解沙箱配置。
 
 ---
 
@@ -223,5 +223,5 @@ openclaw channels login
 
 - [openclaw-ansible](https://github.com/openclaw/openclaw-ansible) — 完整部署指南
 - [Docker](/install/docker) — 容器化网关设置
-- [沙箱](/gateway/sandboxing) — 智能体沙箱配置
-- [多智能体沙箱与工具](/tools/multi-agent-sandbox-tools) — 按智能体隔离
+- [沙箱](/tutorials/gateway/sandboxing) — 智能体沙箱配置
+- [多智能体沙箱与工具](/tutorials/tools/multi-agent-sandbox-tools) — 按智能体隔离

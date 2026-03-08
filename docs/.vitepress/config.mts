@@ -88,6 +88,28 @@ const tutAutomation = listMdItems('tutorials/automation')
 const tutHelp = listMdItems('tutorials/help')
 const tutTools = listMdItems('tutorials/tools')
 
+// 知识库
+const paidKbPreface = listMdItems('openclaw-knowledge/preface')
+const paidKbModule01Core = listMdItems('openclaw-knowledge/module-01-basics/01-core')
+const paidKbModule01Deploy = listMdItems('openclaw-knowledge/module-01-basics/02-deploy')
+const paidKbModule01Basics = listMdItems('openclaw-knowledge/module-01-basics/03-basics')
+const paidKbModule02AShare = listMdItems('openclaw-knowledge/module-02-scenarios/01-a-share')
+const paidKbModule02Office = listMdItems('openclaw-knowledge/module-02-scenarios/02-office')
+const paidKbModule02Devops = listMdItems('openclaw-knowledge/module-02-scenarios/03-devops')
+const paidKbModule02Media = listMdItems('openclaw-knowledge/module-02-scenarios/04-media')
+const paidKbModule03Skills = listMdItems('openclaw-knowledge/module-03-advanced/01-skills')
+const paidKbModule03Models = listMdItems('openclaw-knowledge/module-03-advanced/02-models')
+const paidKbModule03Agents = listMdItems('openclaw-knowledge/module-03-advanced/03-agents')
+const paidKbModule03Security = listMdItems('openclaw-knowledge/module-03-advanced/04-security')
+const paidKbModule04Deploy = listMdItems('openclaw-knowledge/module-04-troubleshooting/01-deploy')
+const paidKbModule04Ops = listMdItems('openclaw-knowledge/module-04-troubleshooting/02-ops')
+const paidKbModule04Advanced = listMdItems('openclaw-knowledge/module-04-troubleshooting/03-advanced')
+const paidKbModule04Diagnosis = listMdItems('openclaw-knowledge/module-04-troubleshooting/04-diagnosis')
+const paidKbModule05 = listMdItems('openclaw-knowledge/module-05-benefits')
+const paidKbModule06 = listMdItems('openclaw-knowledge/module-06-monetization')
+const paidKbAppendix = listMdItems('openclaw-knowledge/appendix')
+const paidKbUpdates = listMdItems('openclaw-knowledge/updates')
+
 const SITE_URL = 'https://openclaw-docs.dx3n.cn'
 
 const jsonLd = JSON.stringify({
@@ -286,6 +308,7 @@ export default withMermaid(defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
+      { text: 'OpenClaw 知识库', link: '/openclaw-knowledge/' },
       {
         text: '教程',
         items: [
@@ -448,6 +471,92 @@ export default withMermaid(defineConfig({
           text: '实战系列',
           collapsed: true,
           items: filterByRange(frameworkItems, 16, 21),
+        },
+      ],
+      '/openclaw-knowledge/': [
+        {
+          text: '导航',
+          items: [{ text: '知识库首页', link: '/openclaw-knowledge/' }],
+        },
+        {
+          text: '一、前言',
+          collapsed: false,
+          items: paidKbPreface,
+        },
+        {
+          text: '二、基础入门',
+          collapsed: true,
+          items: [
+            { text: '模块概览', link: '/openclaw-knowledge/module-01-basics/' },
+            { text: '1.1 核心认知', collapsed: true, items: paidKbModule01Core },
+            { text: '1.2 零门槛部署', collapsed: true, items: paidKbModule01Deploy },
+            { text: '1.3 基础操作', collapsed: true, items: paidKbModule01Basics },
+          ],
+        },
+        {
+          text: '三、核心场景实操',
+          collapsed: true,
+          items: [
+            { text: '模块概览', link: '/openclaw-knowledge/module-02-scenarios/' },
+            { text: '2.1 A股投研', collapsed: true, items: paidKbModule02AShare },
+            { text: '2.2 办公自动化', collapsed: true, items: paidKbModule02Office },
+            { text: '2.3 开发运维', collapsed: true, items: paidKbModule02Devops },
+            { text: '2.4 自媒体', collapsed: true, items: paidKbModule02Media },
+          ],
+        },
+        {
+          text: '四、进阶提升',
+          collapsed: true,
+          items: [
+            { text: '模块概览', link: '/openclaw-knowledge/module-03-advanced/' },
+            { text: '3.1 Skills', collapsed: true, items: paidKbModule03Skills },
+            { text: '3.2 多模型', collapsed: true, items: paidKbModule03Models },
+            { text: '3.3 多智能体', collapsed: true, items: paidKbModule03Agents },
+            { text: '3.4 隐私安全', collapsed: true, items: paidKbModule03Security },
+          ],
+        },
+        {
+          text: '五、避坑指南',
+          collapsed: true,
+          items: [
+            { text: '模块概览', link: '/openclaw-knowledge/module-04-troubleshooting/' },
+            { text: '4.1 部署坑', collapsed: true, items: paidKbModule04Deploy },
+            { text: '4.2 实操坑', collapsed: true, items: paidKbModule04Ops },
+            { text: '4.3 进阶坑', collapsed: true, items: paidKbModule04Advanced },
+            { text: '4.4 诊断命令', collapsed: true, items: paidKbModule04Diagnosis },
+          ],
+        },
+        {
+          text: '六、付费用户权益',
+          collapsed: true,
+          items: [
+            { text: '模块概览', link: '/openclaw-knowledge/module-05-benefits/' },
+            ...paidKbModule05,
+          ],
+        },
+        {
+          text: '七、变现指南',
+          collapsed: true,
+          items: [
+            { text: '模块概览', link: '/openclaw-knowledge/module-06-monetization/' },
+            ...paidKbModule06,
+          ],
+        },
+        {
+          text: '八、附录',
+          collapsed: true,
+          items: [
+            { text: '附录概览', link: '/openclaw-knowledge/appendix/' },
+            ...paidKbAppendix,
+          ],
+        },
+        {
+          text: '九、更新计划',
+          collapsed: true,
+          items: [
+            { text: '更新概览', link: '/openclaw-knowledge/updates/' },
+            ...paidKbUpdates,
+          ],
         },
       ],
     },

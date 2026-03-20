@@ -6,7 +6,7 @@ description: "OpenClaw 快速入门：命令行向导安装指南。> 这是 方
 
 # 命令行向导安装指南
 
-> 这是 **方式二：命令行安装** 的安装指南，支持 macOS、Linux、Windows。
+> 这是 **方式二：命令行安装** 的安装指南，支持 macOS、Linux、Windows（WSL2）。
 > 如果你想用图形界面安装，请看 [macOS App 首次启动指南](./onboarding)。
 
 通过运行一条命令，向导会一步步问你问题，你只需要回答，最后自动帮你配置好一切。全程大约 10 分钟。
@@ -15,27 +15,59 @@ description: "OpenClaw 快速入门：命令行向导安装指南。> 这是 方
 
 ## 前提条件
 
-开始之前，请确认你的电脑上已经安装了：
+开始之前，你需要准备：
 
-- **Node.js 22 或更高版本** — [点此下载 Node.js](https://nodejs.org)（选 LTS 版本即可）
 - **一个 AI API 密钥**（推荐 Anthropic/Claude）— [还没有？先去获取](./getting-started#第一步准备-api-密钥)
 
-验证 Node.js 是否已安装（在终端里输入）：
-
-```bash
-node --version
-```
-
-如果显示 `v22.x.x` 或更高版本，说明已经准备好了。
+Node.js 是必需的运行环境（**推荐 v24，最低 v22.16 LTS**），安装方式见下方。
 
 ---
 
 ## 安装 OpenClaw
 
+### 方式 A：一键安装（推荐新手）
+
+只需在终端里粘贴这一条命令，它会**自动帮你安装 Node.js 并完成 OpenClaw 的安装**，省去手动配置：
+
+**macOS / Linux / WSL2：**
+```bash
+curl -fsSL --proto '=https' --tlsv1.2 https://openclaw.ai/install.sh | bash
+```
+
+**Windows（PowerShell）：**
+```powershell
+iwr -useb https://openclaw.ai/install.ps1 | iex
+```
+
+::: tip 这条命令做了什么？
+1. 检测你的操作系统
+2. 如果没有安装 Node.js 22+，自动帮你安装
+3. 用 npm 全局安装 OpenClaw
+4. 启动设置向导（就是下面说的 9 步）
+
+全程自动，不需要你手动处理 Node.js 版本问题。
+:::
+
+安装完成后，直接跳到[向导共 9 步](#向导共-9-步下面逐步说明)。
+
+---
+
+### 方式 B：手动安装（已有 Node.js 22+）
+
+如果你已经安装了 Node.js 22 或更高版本，可以直接用 npm 安装：
+
+验证 Node.js 版本（在终端里输入）：
+
+```bash
+node --version
+```
+
+如果显示 `v24.x.x` 最佳；`v22.16.x` 以上也可使用。如果版本低于 22.16，请先升级 Node.js 或使用上面的方式 A（会自动处理）。
+
 在终端里运行以下命令安装 OpenClaw：
 
 ```bash
-npm install -g openclaw
+npm install -g openclaw@latest
 ```
 
 安装完成后，验证一下：

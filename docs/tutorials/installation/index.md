@@ -17,7 +17,7 @@ OpenClaw 支持以下操作系统：
 - **Linux**（Ubuntu、Debian 等）✓
 - **Windows**（推荐使用 WSL2，见下方说明）✓
 
-**唯一的要求：电脑上要有 Node.js 22 版本或更新的版本。**
+**Node.js 版本要求：v22 LTS 以上（推荐 v24）。**
 
 怎么检查是否已安装？打开终端，输入：
 
@@ -25,8 +25,9 @@ OpenClaw 支持以下操作系统：
 node --version
 ```
 
-- 看到 `v22.x.x` 或更大的数字 → 可以直接安装
-- 看到版本太低或"找不到命令" → 先看[安装 Node.js](./node)
+- 看到 `v24.x.x` → 最佳，推荐版本
+- 看到 `v22.x.x`（需 22.16+）→ 也可以正常使用
+- 版本低于 22 或"找不到命令" → 先看[安装 Node.js](./node)
 
 ::: info Windows 用户特别说明
 在 Windows 上，我们**强烈建议**用 WSL2（Windows 的 Linux 子系统）来运行 OpenClaw。

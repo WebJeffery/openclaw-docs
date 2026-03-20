@@ -104,9 +104,16 @@ OpenClaw 提供两种安装方式，选一种适合你的就行：
 
 **适合：** 开发者，或者在 Linux / Windows 上使用的用户
 
-- ✅ 支持 macOS、Linux、Windows
+- ✅ 支持 macOS、Linux、Windows（WSL2）
 - ✅ 灵活配置，适合高级用法
 - ⚠️ 需要使用终端（命令行），共 9 步，大约 10 分钟
+
+::: warning Windows 用户注意
+OpenClaw **强烈推荐在 WSL2**（Windows 的 Linux 子系统）下运行，原生 Windows（CMD / PowerShell 直接运行）属于实验性支持，体验可能不稳定。
+
+如果你还没有安装 WSL2，建议先参考微软官方指引完成安装：
+[在 Windows 上安装 WSL](https://learn.microsoft.com/zh-cn/windows/wsl/install)（10 分钟，一条命令搞定）。
+:::
 
 **→ [去命令行向导安装指南](./wizard)**
 

@@ -71,20 +71,24 @@ iwr -useb https://openclaw.ai/install.ps1 | iex
 
     支持 macOS 和 Linux（包括 WSL）。如果检测到 macOS，会在缺失时安装 Homebrew。
 
-  ### 步骤 2：确保 Node.js 22+
+  ### 步骤 2：确保原生编译工具链（仅 Linux）
+
+    在 Linux（包括 WSL）上，安装 Node.js **之前**，脚本会自动预装原生编译工具链（`make`、`g++`、`cmake`、`python3`），避免后续 npm 原生模块安装失败。macOS 会跳过这一步。
+
+  ### 步骤 3：确保 Node.js 22+
 
     检查 Node 版本，如需安装 Node 22（macOS 上使用 Homebrew，Linux 上使用 NodeSource 设置脚本，适用于 apt/dnf/yum）。
 
-  ### 步骤 3：确保 Git
+  ### 步骤 4：确保 Git
 
-    如果缺失则安装 Git。
+    如果缺失则安装 Git。如果是 `npm` 安装方式，也会检查 Git——因为某些 npm 依赖使用 git URL，缺少 Git 会导致 `spawn git ENOENT` 错误。
 
-  ### 步骤 4：安装 OpenClaw
+  ### 步骤 5：安装 OpenClaw
 
     - `npm` 方式（默认）：全局 npm 安装
     - `git` 方式：克隆/更新仓库，使用 pnpm 安装依赖，构建，然后在 `~/.local/bin/openclaw` 安装包装器
 
-  ### 步骤 5：安装后任务
+  ### 步骤 6：安装后任务
 
     - 在升级和 git 安装时运行 `openclaw doctor --non-interactive`（尽力而为）
     - 在适当时尝试引导（TTY 可用、引导未被禁用、且引导/配置检查通过）
@@ -186,15 +190,15 @@ curl -fsSL --proto '=https' --tlsv1.2 https://openclaw.ai/install.sh | bash -s -
 ### 流程（install-cli.sh）
 
 
-  ### 步骤 6：安装本地 Node 运行时
+  ### 步骤 7：安装本地 Node 运行时
 
     下载 Node 压缩包（默认 `22.22.0`）到 `<prefix>/tools/node-v<version>` 并验证 SHA-256。
 
-  ### 步骤 7：确保 Git
+  ### 步骤 8：确保 Git
 
     如果缺失 Git，在 Linux 上尝试通过 apt/dnf/yum 安装，macOS 上通过 Homebrew 安装。
 
-  ### 步骤 8：在前缀下安装 OpenClaw
+  ### 步骤 9：在前缀下安装 OpenClaw
 
     使用 npm 的 `--prefix <prefix>` 安装，然后将包装器写入 `<prefix>/bin/openclaw`。
 
@@ -269,20 +273,20 @@ curl -fsSL --proto '=https' --tlsv1.2 https://openclaw.ai/install-cli.sh | bash 
 ### 流程（install.ps1）
 
 
-  ### 步骤 9：确保 PowerShell + Windows 环境
+  ### 步骤 10：确保 PowerShell + Windows 环境
 
     需要 PowerShell 5+。
 
-  ### 步骤 10：确保 Node.js 22+
+  ### 步骤 11：确保 Node.js 22+
 
     如果缺失，依次尝试通过 winget、Chocolatey、Scoop 安装。
 
-  ### 步骤 11：安装 OpenClaw
+  ### 步骤 12：安装 OpenClaw
 
     - `npm` 方式（默认）：使用选定的 `-Tag` 进行全局 npm 安装
     - `git` 方式：克隆/更新仓库，使用 pnpm 安装/构建，并在 `%USERPROFILE%\.local\bin\openclaw.cmd` 安装包装器
 
-  ### 步骤 12：安装后任务
+  ### 步骤 13：安装后任务
 
     在可能时将所需的 bin 目录添加到用户 PATH，然后在升级和 git 安装时运行 `openclaw doctor --non-interactive`（尽力而为）。
 

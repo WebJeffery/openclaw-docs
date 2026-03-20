@@ -45,14 +45,30 @@ openclaw gateway restart
 
 在 Telegram 搜索你刚创建的 Bot 用户名（比如 `my_ai_bot`），点击"开始"，发送一条消息。
 
-第一次发消息时，你会收到一个**配对码**。这是安全验证，需要你在终端批准：
+第一次发消息时，Bot 会回复一条类似这样的消息：
 
-```bash
-openclaw pairing list telegram        # 查看等待批准的请求
-openclaw pairing approve telegram <CODE>   # 批准（把 CODE 替换成实际的码）
+```
+🔐 配对请求
+你的配对码是：ABC123
+请在终端运行以下命令来批准：
+openclaw pairing approve telegram ABC123
 ```
 
-批准后，再发一条消息，AI 助手就会回复了！
+**这是安全验证，防止陌生人使用你的 Bot。** 打开你电脑上的终端，运行：
+
+```bash
+# 先查看等待批准的配对请求（确认码是正确的）
+openclaw pairing list telegram
+
+# 批准（把 ABC123 换成 Bot 发给你的实际码）
+openclaw pairing approve telegram ABC123
+```
+
+批准后，**回到 Telegram 再发一条消息**，AI 助手就会正式回复了！
+
+::: tip 配对只需做一次
+配对批准后，以后你发消息就不需要再批准了。如果你想让其他人也能用这个 Bot，需要分别批准他们的配对请求。
+:::
 
 ---
 

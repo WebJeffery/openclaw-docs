@@ -25,7 +25,7 @@ TypeError: __name is not a function
 
 ### 环境条件
 
-- 运行时：Node.js（v18 或更高）
+- 运行时：Node.js（v22 或更高）
 - TypeScript 执行器：`tsx`（特定版本）
 - 操作系统：macOS / Linux / Windows WSL
 
@@ -120,7 +120,7 @@ node dist/your-script.js
 1. **确认 Node.js 版本**
    ```bash
    node --version
-   # 需要 v18.0.0 或更高
+   # 需要 v22.0.0 或更高
    ```
 
 2. **清理依赖缓存，重新安装**
